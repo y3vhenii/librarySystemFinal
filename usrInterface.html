@@ -1,0 +1,38 @@
+<!--
+    This page is used to create user experience
+    and provide the user with the options 
+    regarding his account and the actions that
+    they would like to take.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title> Library User System </title>
+        <!--Link to CSS-->
+        <link rel="stylesheet" href="css/usrInterDesign.css"/>
+        <!--Link to javascript file-->
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+            <h1>Library User System</h1>
+            <div class="wrapper">
+                <form action="secondaryValidation.php" onsubmit="return validateaccount()" method="post">
+                    <label>Patron name:</label>   
+                        <input type="text" id="patName" name="patName" /> <br />
+                    <label>Patron card number:</label> 
+                        <input type="text" id="patCardNum" name="patCardNum" /> <br />
+                    <label>Patron email: </label> 
+                        <input type="text" id="patEmail" name="patEmail" /> <br />
+                    <label for="business">Select a transaction:
+                        <select id="business" name="selection">
+                            <option value="accountRecords.php">Access account records</option>
+                            <option value="makeOrder.php">Request order</option>
+                            <option value="bookReturn.html">Return a book</option>
+                        </select>
+                    </label><br />   
+                    <button type ="submit" value="Submit">Continue</button>
+                    <button type="button" onclick="location.href = 'index.html';">Log out</button>
+                </form> 
+            </div>
+    </body>
+</html> 

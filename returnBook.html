@@ -1,0 +1,32 @@
+<!--
+    This page is displayed when the user wants to
+    return the book. Once the form is submitted,
+    the information will be passed down to the php
+    script to verify the information and execute 
+    SQL command.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>
+            Library User System
+        </title>
+        <!--Link to CSS-->
+        <link rel="stylesheet" href="css/createAcctFormDesign.css"/>
+        <!--Link to javascript file-->
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+            <h1>Library User System</h1>
+            <h2>Book return</h2>
+            <div class="form1">
+                <form action="bookReturn.php" onsubmit="" method="post">
+                    <label>Book name:</label>   <input type="text" id="bookName" name="bookName"/> <br />
+                    <label>Book author:</label> <input type="text" id="bookAuthor" name="bookAuthor"/> <br />
+                    <label>(All fields must be filled)</label> <br />
+                    <button type ="submit" value="Submit">Return a book</button> 
+                    <button type= "button" onclick="location.href = 'index.html';">Go back to login page</button>
+                </form>
+            </div>
+    </body>
+</html> 

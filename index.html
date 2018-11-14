@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title> Library User System </title>
+        <!--Link to CSS-->
+        <link rel="stylesheet" href="css/style.css"/>
+        <!--Link to javascript file-->
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+            <h1>Library User System</h1>
+            <div class="form1">
+                <form action="main.php" onsubmit="return validate()" method="post">
+                    <label>Patron name:</label> 
+                        <input type="text" id= "custName" name="patName"/> <br />
+                    <label>Patron card #:</label> 
+                        <input type="text" id= "custCard" name="patCardNum"/> <br />
+                    <a href="createAccount.html">Create an account</a> <br />
+                    <button type ="submit" value="Submit">Login</button> 
+                </form>
+            </div>
+    </body>
+</html>

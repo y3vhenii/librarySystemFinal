@@ -1,0 +1,33 @@
+<!--
+    This page is being displayed when the user
+    wants to create an account.Once the form is 
+    submitted, the php script will take over and 
+    make sure that the information is recorded on 
+    the database.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>
+            Library User System
+        </title>
+        <!--Link to CSS-->
+        <link rel="stylesheet" href="css/createAcctFormDesign.css"/>
+        <!--Link to javascript file-->
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+            <h1>Library User System</h1>
+            <h2>Please create an account</h2>
+            <div class="form1">
+                <form action="createAccount.php" onsubmit="return validateNewAccountEntry()" method="post">
+                    <label>Patron name:</label>   <input type="text" id="newPatName" name="newPatName"/> <br />
+                    <label>Patron card number:</label> <input type="text" id="newPatCardNum" name="newPatCardNum"/> <br />
+                    <label>Patron email: </label> <input type="text" id="newPatEmail" name="newPatEmail"/> <br />
+                    <label>(All fields must be filled)</label> <br />
+                    <button type ="submit" value="Submit">Create new account</button> 
+                    <button type= "button" onclick="location.href = 'index.html';">Go back to login page</button>
+                </form>
+            </div>
+    </body>
+</html> 

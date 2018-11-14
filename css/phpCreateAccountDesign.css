@@ -1,0 +1,35 @@
+body{
+    margin: auto;
+    background-color: beige;
+}
+h1{
+        width: 350px;
+        margin: auto;
+        padding: 10px;
+        text-align: center;
+        border: solid black 2px;
+        border-radius: 20px;
+        background-color: #ffffcc;
+}
+h2{
+    width: 350px;
+    margin-top:10px;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+}
+div{
+    width: 350px;
+    margin: 0 auto;
+    text-align: center;
+}
+button{
+    border-radius: 5px;
+}
+button:hover{
+    background-color: #ffffcc;
+}
+input{
+    clear: both;
+    width: 99%;
+}
